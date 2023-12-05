@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF=8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="midasi">
+<h1>プログラム復習コンテンツ</h1>
+<a href="https://o-saringu.github.io/mokuji/">
+<div class="home"></div>
+</a>
+</div>
+
+<div class="oomidasi"><p>トゥイーニング（2点間の移動）</div>
+
+<div class="yoko">
+	<div class="yoko1">
+	<div class="komidasi1"><p>サンプルコードの結果</p></div>
+	<img src = "8-4.png">
+	</div>
+	<div class="yoko1">
+	<div class="komidasi2"><p>サンプルコード</div>
+	<div class="code">
+		<p>　　	int startX=20;　　　//始点x座標
+		<p>　　	int stopX=160;　　　//終点x座標
+		<p>　　	int startY=30;　　　//始点y座標
+		<p>　　	int stopY=80;　　　//終点y座標
+		<p>　　	float x=startX;　　　//今のx座標
+		<p>　　	float y=startY;　　　//今のx座標
+		<p>　　	float step=0.005;　　　//ステップごとの移動量（0.0~1.0）
+		<p>　　	float pct=0.0;　　　//移動量　百分率（0.0~1.0）
+		<p>　　	　
+		<p>　　	void setup(){
+		<p>　　	　size(240, 120);
+		<p>　　	}
+		<p>　　	
+		<p>　　	void draw(){　　
+		<p>　　	　background(0);
+		<p>　　	　if(pct<1.0){
+		<p>　　	　　x=startX+((stopX-startX)*pct);
+		<p>　　	　　y=startY+((stopY-startY)*pct);
+		<p>　　	　　pct+=step;
+		<p>　　	　}
+		<p>　　	　ellipse(x, y, 20, 20);
+		<p>　　	}
+	</div>
+	</div>
+</div>
+
+
+<div class="komidasi3"><p>説明文</div>
+<div class="ep">
+	<p>　トゥイーニングとは画面上のある点（始点）から別の点（終点）へ図形が移動するアニメーションの処理のことを指している。
+	<p>　始点と終点間の位置はフレームごとの計算で求める。
+	<p>　初めに変数を設定しておくことで値の変更を容易にさせる。
+	<p>　step変数の値を変更させると、移動スピードを変更させることができる。
+	<p>　
+</div>
+
+</body>
+
+
