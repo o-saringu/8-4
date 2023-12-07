@@ -1,7 +1,15 @@
 <!DOCTYPE html>
+<html lang="jp">
+
 <head>
-<meta charset="UTF=8">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=M+PLUS+1p:wght@500&family=Oswald&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -22,27 +30,27 @@
 	<div class="yoko1">
 	<div class="komidasi2"><p>サンプルコード</div>
 	<div class="code">
-		<p>　　	int startX=20;　　　//始点x座標
-		<p>　　	int stopX=160;　　　//終点x座標
-		<p>　　	int startY=30;　　　//始点y座標
-		<p>　　	int stopY=80;　　　//終点y座標
-		<p>　　	float x=startX;　　　//今のx座標
-		<p>　　	float y=startY;　　　//今のx座標
-		<p>　　	float step=0.005;　　　//ステップごとの移動量（0.0~1.0）
-		<p>　　	float pct=0.0;　　　//移動量　百分率（0.0~1.0）
+		<p>　　	<a href="https://o-saringu.github.io/de-ta/"target="_blank" rel="noopener noreferrer" >int</a> startX=20;　　　//始点x座標
+		<p>　　	<a href="https://o-saringu.github.io/de-ta/"target="_blank" rel="noopener noreferrer" >int</a> stopX=160;　　　//終点x座標
+		<p>　　	<a href="https://o-saringu.github.io/de-ta/"target="_blank" rel="noopener noreferrer" >int</a> startY=30;　　　//始点y座標
+		<p>　　	<a href="https://o-saringu.github.io/de-ta/"target="_blank" rel="noopener noreferrer" >int</a> stopY=80;　　　//終点y座標
+		<p>　　	<a href="https://o-saringu.github.io/de-ta/"target="_blank" rel="noopener noreferrer" >float</a> x=startX;　　　//今のx座標
+		<p>　　	<a href="https://o-saringu.github.io/de-ta/"target="_blank" rel="noopener noreferrer" >float</a> y=startY;　　　//今のx座標
+		<p>　　	<a href="https://o-saringu.github.io/de-ta/"target="_blank" rel="noopener noreferrer" >float</a> step=0.005;　　　//ステップごとの移動量（0.0~1.0）
+		<p>　　	<a href="https://o-saringu.github.io/de-ta/"target="_blank" rel="noopener noreferrer" >float</a> pct=0.0;　　　//移動量　百分率（0.0~1.0）
 		<p>　　	　
-		<p>　　	void setup(){
-		<p>　　	　size(240, 120);
+		<p>　　	<a href="https://o-saringu.github.io/5-2/"target="_blank" rel="noopener noreferrer" >void setup()</a>{
+		<p>　　	　<a href="https://o-saringu.github.io/size/"target="_blank" rel="noopener noreferrer" >size</a>(240, 120);
 		<p>　　	}
 		<p>　　	
-		<p>　　	void draw(){　　
-		<p>　　	　background(0);
-		<p>　　	　if(pct<1.0){
+		<p>　　	<a href="https://o-saringu.github.io/5-1/"target="_blank" rel="noopener noreferrer" >void draw()</a>{　　
+		<p>　　	　<a href="https://o-saringu.github.io/background/"target="_blank" rel="noopener noreferrer" >background</a>(0);
+		<p>　　	　<a href="https://o-saringu.github.io/if/"target="_blank" rel="noopener noreferrer" >if</a>(pct<1.0){
 		<p>　　	　　x=startX+((stopX-startX)*pct);
 		<p>　　	　　y=startY+((stopY-startY)*pct);
 		<p>　　	　　pct+=step;
 		<p>　　	　}
-		<p>　　	　ellipse(x, y, 20, 20);
+		<p>　　	　<a href="https://o-saringu.github.io/ellipse/"target="_blank" rel="noopener noreferrer" >ellipse</a>(x, y, 20, 20);
 		<p>　　	}
 	</div>
 	</div>
@@ -53,7 +61,7 @@
 <div class="ep">
 	<p>　トゥイーニングとは画面上のある点（始点）から別の点（終点）へ図形が移動するアニメーションの処理のことを指している。
 	<p>　始点と終点間の位置はフレームごとの計算で求める。
-	<p>　初めに変数を設定しておくことで値の変更を容易にさせる。
+	<p>　初めに<a href="https://o-saringu.github.io/4-1/"target="_blank" rel="noopener noreferrer" >変数</a>を設定しておくことで値の変更を容易にさせる。
 	<p>　step変数の値を変更させると、移動スピードを変更させることができる。
 	<p>　
 </div>
